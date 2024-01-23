@@ -231,7 +231,7 @@ jobs:
           ALLURE_RESULTS_DIR: ${{ env.ALLURE_RESULTS_DIR }}
           ALLURE_GENERATED_DIR: 'neofs-test-allure-generated-report'
 
-      - name: Post the link to the report
+      - name: Post link to report
         id: post_report_link
         timeout-minutes: 60
         if: always() && steps.put_report.outcome == 'success'
